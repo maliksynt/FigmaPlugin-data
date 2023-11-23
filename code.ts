@@ -2,15 +2,9 @@ figma.showUI(__html__);
 
 figma.ui.onmessage = async (msg) => {
   if (msg.type === "create-rectangles") {
-    // START HERE AND DELETE ASYNC MAIN() ###############################################################
-
     // Load FONTS
     async function loadFonts() {
       await Promise.all([
-        figma.loadFontAsync({
-          family: "Roboto",
-          style: "SemiBold",
-        }),
         figma.loadFontAsync({
           family: "Roboto",
           style: "Bold",
@@ -67,224 +61,248 @@ figma.ui.onmessage = async (msg) => {
     ];
 
     // Create FRAME
-    var frame_4232_1288 = figma.createFrame();
-    figma.currentPage.appendChild(frame_4232_1288);
-    frame_4232_1288.resize(1440.0, 979.0);
-    frame_4232_1288.primaryAxisSizingMode = "AUTO";
-    frame_4232_1288.fillStyleId = white_77ad.id;
-    frame_4232_1288.backgroundStyleId = white_77ad.id;
-    frame_4232_1288.name = "Pricing / 18 /";
-    frame_4232_1288.relativeTransform = [
-      [1, 0, 1474],
-      [0, 1, 20290],
+    var frame_4244_3749 = figma.createFrame();
+    figma.currentPage.appendChild(frame_4244_3749);
+    frame_4244_3749.resize(1440.0, 1946.0);
+    frame_4244_3749.primaryAxisSizingMode = "AUTO";
+    frame_4244_3749.fillStyleId = white_77ad.id;
+    frame_4244_3749.backgroundStyleId = white_77ad.id;
+    frame_4244_3749.name = "Team / 6 /";
+    frame_4244_3749.relativeTransform = [
+      [1, 0, 1694],
+      [0, 1, 8276],
     ];
-    frame_4232_1288.x = 1474;
-    frame_4232_1288.y = 20290;
-    frame_4232_1288.paddingLeft = 64;
-    frame_4232_1288.paddingRight = 64;
-    frame_4232_1288.paddingTop = 112;
-    frame_4232_1288.paddingBottom = 112;
-    frame_4232_1288.counterAxisAlignItems = "CENTER";
-    frame_4232_1288.strokeTopWeight = 1;
-    frame_4232_1288.strokeBottomWeight = 1;
-    frame_4232_1288.strokeLeftWeight = 1;
-    frame_4232_1288.strokeRightWeight = 1;
-    frame_4232_1288.layoutMode = "VERTICAL";
-    frame_4232_1288.itemSpacing = 80;
+    frame_4244_3749.x = 1694;
+    frame_4244_3749.y = 8276;
+    frame_4244_3749.paddingLeft = 64;
+    frame_4244_3749.paddingRight = 64;
+    frame_4244_3749.paddingTop = 112;
+    frame_4244_3749.paddingBottom = 112;
+    frame_4244_3749.counterAxisAlignItems = "CENTER";
+    frame_4244_3749.strokeTopWeight = 1;
+    frame_4244_3749.strokeBottomWeight = 1;
+    frame_4244_3749.strokeLeftWeight = 1;
+    frame_4244_3749.strokeRightWeight = 1;
+    frame_4244_3749.itemSpacing = 80;
 
     // Create FRAME
-    var frame_4232_1289 = figma.createFrame();
-    frame_4232_1288.appendChild(frame_4232_1289);
-    frame_4232_1289.resize(255.0, 164.0);
-    frame_4232_1289.primaryAxisSizingMode = "AUTO";
-    frame_4232_1289.name = "Section Title";
-    frame_4232_1289.relativeTransform = [
-      [1, 0, 592.5],
+    var frame_4244_3750 = figma.createFrame();
+    frame_4244_3749.appendChild(frame_4244_3750);
+    frame_4244_3750.resize(768.0, 163.0);
+    frame_4244_3750.primaryAxisSizingMode = "AUTO";
+    frame_4244_3750.name = "Section Title";
+    frame_4244_3750.relativeTransform = [
+      [1, 0, 336],
       [0, 1, 112],
     ];
-    frame_4232_1289.x = 592.5;
-    frame_4232_1289.y = 112;
-    frame_4232_1289.fills = [];
-    frame_4232_1289.counterAxisAlignItems = "CENTER";
-    frame_4232_1289.strokeTopWeight = 1;
-    frame_4232_1289.strokeBottomWeight = 1;
-    frame_4232_1289.strokeLeftWeight = 1;
-    frame_4232_1289.strokeRightWeight = 1;
-    frame_4232_1289.clipsContent = false;
-    frame_4232_1289.layoutMode = "VERTICAL";
-    frame_4232_1289.itemSpacing = 16;
+    frame_4244_3750.x = 336;
+    frame_4244_3750.y = 112;
+    frame_4244_3750.fills = [];
+    frame_4244_3750.counterAxisAlignItems = "CENTER";
+    frame_4244_3750.strokeTopWeight = 1;
+    frame_4244_3750.strokeBottomWeight = 1;
+    frame_4244_3750.strokeLeftWeight = 1;
+    frame_4244_3750.strokeRightWeight = 1;
+    frame_4244_3750.clipsContent = false;
+    frame_4244_3750.itemSpacing = 16;
 
     // Create TEXT
-    var text_4232_1290 = figma.createText();
-    frame_4232_1289.appendChild(text_4232_1290);
-    text_4232_1290.fillStyleId = black_4902.id;
-    text_4232_1290.resize(58.0, 26.0);
-    text_4232_1290.name = "Subheading";
-    text_4232_1290.relativeTransform = [
-      [1, 0, 98.5],
+    var text_4244_3751 = figma.createText();
+    frame_4244_3750.appendChild(text_4244_3751);
+    text_4244_3751.fillStyleId = black_4902.id;
+    text_4244_3751.resize(56.0, 26.0);
+    text_4244_3751.name = "Subheading";
+    text_4244_3751.relativeTransform = [
+      [1, 0, 356],
       [0, 1, 0],
     ];
-    text_4232_1290.x = 98.5;
-    text_4232_1290.autoRename = false;
+    text_4244_3751.x = 356;
+    text_4244_3751.autoRename = false;
 
     // Font properties
-    text_4232_1290.fontName = {
-      family: "Roboto",
-      style: "SemiBold",
-    };
-    text_4232_1290.characters = "Tagline";
-    text_4232_1290.fontSize = 17;
-    text_4232_1290.listSpacing = 0;
-    text_4232_1290.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4232_1290.fontName = { family: "Roboto", style: "SemiBold" };
-    text_4232_1290.textAutoResize = "HEIGHT";
-
-    // Create FRAME
-    var frame_4232_1291 = figma.createFrame();
-    frame_4232_1289.appendChild(frame_4232_1291);
-    frame_4232_1291.resize(255.0, 122.0);
-    frame_4232_1291.primaryAxisSizingMode = "AUTO";
-    frame_4232_1291.name = "Content";
-    frame_4232_1291.relativeTransform = [
-      [1, 0, 0],
-      [0, 1, 42],
-    ];
-    frame_4232_1291.y = 42;
-    frame_4232_1291.layoutAlign = "STRETCH";
-    frame_4232_1291.fills = [];
-    frame_4232_1291.counterAxisAlignItems = "CENTER";
-    frame_4232_1291.strokeTopWeight = 1;
-    frame_4232_1291.strokeBottomWeight = 1;
-    frame_4232_1291.strokeLeftWeight = 1;
-    frame_4232_1291.strokeRightWeight = 1;
-    frame_4232_1291.clipsContent = false;
-    frame_4232_1291.layoutMode = "VERTICAL";
-    frame_4232_1291.itemSpacing = 24;
-
-    // Create TEXT
-    var text_4232_1292 = figma.createText();
-    frame_4232_1291.appendChild(text_4232_1292);
-    text_4232_1292.fillStyleId = black_4902.id;
-    text_4232_1292.resize(258.0, 72.0);
-    text_4232_1292.name = "Heading";
-    text_4232_1292.relativeTransform = [
-      [1, 0, -1.5],
-      [0, 1, 0],
-    ];
-    text_4232_1292.x = -1.5;
-    text_4232_1292.autoRename = false;
-
-    // Font properties
-    text_4232_1292.fontName = {
+    text_4244_3751.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4232_1292.characters = "Pricing plan";
-    text_4232_1292.fontSize = 48;
-    text_4232_1292.listSpacing = 0;
-    text_4232_1292.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4232_1292.fontName = { family: "Roboto", style: "Bold" };
-    text_4232_1292.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_3751.characters = "Tagline";
+    text_4244_3751.fontSize = 17;
+    text_4244_3751.listSpacing = 0;
+    text_4244_3751.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3751.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_3751.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_3752 = figma.createFrame();
+    frame_4244_3750.appendChild(frame_4244_3752);
+    frame_4244_3752.resize(768.0, 123.0);
+    frame_4244_3752.primaryAxisSizingMode = "AUTO";
+    frame_4244_3752.name = "Content";
+    frame_4244_3752.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 40],
+    ];
+    frame_4244_3752.y = 40;
+    frame_4244_3752.layoutAlign = "STRETCH";
+    frame_4244_3752.fills = [];
+    frame_4244_3752.counterAxisAlignItems = "CENTER";
+    frame_4244_3752.strokeTopWeight = 1;
+    frame_4244_3752.strokeBottomWeight = 1;
+    frame_4244_3752.strokeLeftWeight = 1;
+    frame_4244_3752.strokeRightWeight = 1;
+    frame_4244_3752.clipsContent = false;
+    frame_4244_3752.itemSpacing = 24;
 
     // Create TEXT
-    var text_4232_1293 = figma.createText();
-    frame_4232_1291.appendChild(text_4232_1293);
-    text_4232_1293.fillStyleId = black_4902.id;
-    text_4232_1293.resize(419.0, 26.0);
-    text_4232_1293.relativeTransform = [
-      [1, 0, -82],
-      [0, 1, 96],
+    var text_4244_3753 = figma.createText();
+    frame_4244_3752.appendChild(text_4244_3753);
+    text_4244_3753.fillStyleId = black_4902.id;
+    text_4244_3753.resize(199.0, 72.0);
+    text_4244_3753.name = "Heading";
+    text_4244_3753.relativeTransform = [
+      [1, 0, 284.5],
+      [0, 1, 0],
     ];
-    text_4232_1293.x = -82;
-    text_4232_1293.y = 96;
-    text_4232_1293.autoRename = false;
+    text_4244_3753.x = 284.5;
+    text_4244_3753.autoRename = false;
 
     // Font properties
-    text_4232_1293.fontName = {
+    text_4244_3753.fontName = {
+      family: "Roboto",
+      style: "Bold",
+    };
+    text_4244_3753.characters = "Our team";
+    text_4244_3753.fontSize = 48;
+    text_4244_3753.listSpacing = 0;
+    text_4244_3753.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3753.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_3753.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_3754 = figma.createText();
+    frame_4244_3752.appendChild(text_4244_3754);
+    text_4244_3754.fillStyleId = black_4902.id;
+    text_4244_3754.resize(419.0, 26.0);
+    text_4244_3754.name =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+    text_4244_3754.relativeTransform = [
+      [1, 0, 174],
+      [0, 1, 89],
+    ];
+    text_4244_3754.x = 174;
+    text_4244_3754.y = 89;
+
+    // Font properties
+    text_4244_3754.fontName = {
       family: "Roboto",
       style: "Regular",
     };
-    text_4232_1293.characters =
+    text_4244_3754.characters =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ";
-    text_4232_1293.fontSize = 17;
-    text_4232_1293.listSpacing = 0;
-    text_4232_1293.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4232_1293.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_3754.fontSize = 17;
+    text_4244_3754.listSpacing = 0;
+    text_4244_3754.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3754.textAutoResize = "HEIGHT";
 
     // Create FRAME
-    var frame_4232_1294 = figma.createFrame();
-    frame_4232_1288.appendChild(frame_4232_1294);
-    frame_4232_1294.resize(1312.0, 511.0);
-    frame_4232_1294.counterAxisSizingMode = "AUTO";
-    frame_4232_1294.name = "Content";
-    frame_4232_1294.relativeTransform = [
+    var frame_4244_3755 = figma.createFrame();
+    frame_4244_3749.appendChild(frame_4244_3755);
+    frame_4244_3755.resize(1312.0, 588.0);
+    frame_4244_3755.primaryAxisSizingMode = "AUTO";
+    frame_4244_3755.name = "Content";
+    frame_4244_3755.relativeTransform = [
       [1, 0, 64],
-      [0, 1, 356],
+      [0, 1, 355],
     ];
-    frame_4232_1294.x = 64;
-    frame_4232_1294.y = 356;
-    frame_4232_1294.layoutAlign = "STRETCH";
-    frame_4232_1294.fills = [];
-    frame_4232_1294.paddingLeft = 10;
-    frame_4232_1294.paddingRight = 10;
-    frame_4232_1294.paddingTop = 10;
-    frame_4232_1294.paddingBottom = 10;
-    frame_4232_1294.counterAxisAlignItems = "CENTER";
-    frame_4232_1294.primaryAxisSizingMode = "FIXED";
-    frame_4232_1294.strokeTopWeight = 1;
-    frame_4232_1294.strokeBottomWeight = 1;
-    frame_4232_1294.strokeLeftWeight = 1;
-    frame_4232_1294.strokeRightWeight = 1;
-    frame_4232_1294.clipsContent = false;
-    frame_4232_1294.counterAxisSizingMode = "AUTO";
-    frame_4232_1294.itemSpacing = 10;
+    frame_4244_3755.x = 64;
+    frame_4244_3755.y = 355;
+    frame_4244_3755.layoutAlign = "STRETCH";
+    frame_4244_3755.fills = [];
+    frame_4244_3755.counterAxisAlignItems = "CENTER";
+    frame_4244_3755.strokeTopWeight = 1;
+    frame_4244_3755.strokeBottomWeight = 1;
+    frame_4244_3755.strokeLeftWeight = 1;
+    frame_4244_3755.strokeRightWeight = 1;
+    frame_4244_3755.clipsContent = false;
+    frame_4244_3755.layoutMode = "VERTICAL";
+    frame_4244_3755.itemSpacing = 96;
+
+    // Create FRAME
+    var frame_4244_3756 = figma.createFrame();
+    frame_4244_3755.appendChild(frame_4244_3756);
+    frame_4244_3756.resize(1312.0, 588.0);
+    frame_4244_3756.primaryAxisSizingMode = "AUTO";
+    frame_4244_3756.name = "Content";
+    frame_4244_3756.layoutAlign = "STRETCH";
+    frame_4244_3756.fills = [];
+    frame_4244_3756.strokeTopWeight = 1;
+    frame_4244_3756.strokeBottomWeight = 1;
+    frame_4244_3756.strokeLeftWeight = 1;
+    frame_4244_3756.strokeRightWeight = 1;
+    frame_4244_3756.clipsContent = false;
+    frame_4244_3756.itemSpacing = 64;
+
+    // Create FRAME
+    var frame_4244_3757 = figma.createFrame();
+    frame_4244_3756.appendChild(frame_4244_3757);
+    frame_4244_3757.resize(411.0, 588.0);
+    frame_4244_3757.name = "Row";
+    frame_4244_3757.fills = [];
+    frame_4244_3757.primaryAxisSizingMode = "FIXED";
+    frame_4244_3757.strokeTopWeight = 1;
+    frame_4244_3757.strokeBottomWeight = 1;
+    frame_4244_3757.strokeLeftWeight = 1;
+    frame_4244_3757.strokeRightWeight = 1;
+    frame_4244_3757.clipsContent = false;
+    frame_4244_3757.expanded = false;
+    frame_4244_3757.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_3758 = figma.createFrame();
+    frame_4244_3757.appendChild(frame_4244_3758);
+    frame_4244_3758.resize(411.0, 588.0);
+    frame_4244_3758.primaryAxisSizingMode = "AUTO";
+    frame_4244_3758.name = "Card";
+    frame_4244_3758.layoutGrow = 1;
+    frame_4244_3758.fills = [];
+    frame_4244_3758.counterAxisAlignItems = "CENTER";
+    frame_4244_3758.strokeTopWeight = 1;
+    frame_4244_3758.strokeBottomWeight = 1;
+    frame_4244_3758.strokeLeftWeight = 1;
+    frame_4244_3758.strokeRightWeight = 1;
+    frame_4244_3758.clipsContent = false;
+    frame_4244_3758.itemSpacing = 24;
 
     // Create RECTANGLE
-    var rectangle_4235_1737 = figma.createRectangle();
-    frame_4232_1294.appendChild(rectangle_4235_1737);
-    rectangle_4235_1737.resize(409.0, 511.0);
-    rectangle_4235_1737.name = "Rectangle 1";
-    rectangle_4235_1737.fills = [
+    var rectangle_4244_4049 = figma.createRectangle();
+    frame_4244_3758.appendChild(rectangle_4244_4049);
+    rectangle_4244_4049.resize(411.0, 411.0);
+    rectangle_4244_4049.name = "Rectangle 1";
+    rectangle_4244_4049.fills = [
       {
         type: "SOLID",
         visible: true,
         opacity: 1,
         blendMode: "NORMAL",
-        color: { r: 1, g: 1, b: 1 },
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
         boundVariables: {},
       },
     ];
-    rectangle_4235_1737.strokes = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    rectangle_4235_1737.strokeTopWeight = 1;
-    rectangle_4235_1737.strokeBottomWeight = 1;
-    rectangle_4235_1737.strokeLeftWeight = 1;
-    rectangle_4235_1737.strokeRightWeight = 1;
+    rectangle_4244_4049.constrainProportions = true;
+    rectangle_4244_4049.strokeTopWeight = 1;
+    rectangle_4244_4049.strokeBottomWeight = 1;
+    rectangle_4244_4049.strokeLeftWeight = 1;
+    rectangle_4244_4049.strokeRightWeight = 1;
 
-    // Create VECTOR
-    var vector_4235_1740 = figma.createVector();
-    frame_4232_1294.appendChild(vector_4235_1740);
-    vector_4235_1740.resize(409.0, 511.0);
-    vector_4235_1740.name = "Rectangle 2";
-    vector_4235_1740.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 1, g: 1, b: 1 },
-        boundVariables: {},
-      },
-    ];
-    vector_4235_1740.strokes = [
+    // Create TEXT
+    var text_4244_4050 = figma.createText();
+    frame_4244_3758.appendChild(text_4244_4050);
+    text_4244_4050.resize(117.0, 26.0);
+    text_4244_4050.name = "PLACEHOLDER";
+    text_4244_4050.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -294,221 +312,227 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    vector_4235_1740.strokeAlign = "INSIDE";
-    vector_4235_1740.relativeTransform = [
-      [1, 0, 442],
+    text_4244_4050.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
+    ];
+    text_4244_4050.x = 147;
+    text_4244_4050.y = 193;
+
+    // Font properties
+    text_4244_4050.fontName = {
+      family: "Roboto",
+      style: "Bold",
+    };
+    text_4244_4050.characters = "PLACEHOLDER";
+    text_4244_4050.fontSize = 17;
+    text_4244_4050.listSpacing = 0;
+    text_4244_4050.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4050.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4050.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_3760 = figma.createFrame();
+    frame_4244_3758.appendChild(frame_4244_3760);
+    frame_4244_3760.resize(411.0, 123.0);
+    frame_4244_3760.primaryAxisSizingMode = "AUTO";
+    frame_4244_3760.name = "Content";
+    frame_4244_3760.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_3760.y = 434;
+    frame_4244_3760.layoutAlign = "STRETCH";
+    frame_4244_3760.fills = [];
+    frame_4244_3760.counterAxisAlignItems = "CENTER";
+    frame_4244_3760.strokeTopWeight = 1;
+    frame_4244_3760.strokeBottomWeight = 1;
+    frame_4244_3760.strokeLeftWeight = 1;
+    frame_4244_3760.strokeRightWeight = 1;
+    frame_4244_3760.clipsContent = false;
+    frame_4244_3760.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_3761 = figma.createFrame();
+    frame_4244_3760.appendChild(frame_4244_3761);
+    frame_4244_3761.resize(411.0, 58.0);
+    frame_4244_3761.primaryAxisSizingMode = "AUTO";
+    frame_4244_3761.name = "Title";
+    frame_4244_3761.layoutAlign = "STRETCH";
+    frame_4244_3761.fills = [];
+    frame_4244_3761.counterAxisAlignItems = "CENTER";
+    frame_4244_3761.strokeTopWeight = 1;
+    frame_4244_3761.strokeBottomWeight = 1;
+    frame_4244_3761.strokeLeftWeight = 1;
+    frame_4244_3761.strokeRightWeight = 1;
+    frame_4244_3761.clipsContent = false;
+    frame_4244_3761.layoutMode = "VERTICAL";
+
+    // Create TEXT
+    var text_4244_3762 = figma.createText();
+    frame_4244_3761.appendChild(text_4244_3762);
+    text_4244_3762.fillStyleId = black_4902.id;
+    text_4244_3762.resize(92.0, 32.0);
+    text_4244_3762.name = "Name";
+    text_4244_3762.relativeTransform = [
+      [1, 0, 159.5],
       [0, 1, 0],
     ];
-    vector_4235_1740.x = 442;
-    vector_4235_1740.vectorNetwork = {
-      regions: [
-        {
-          windingRule: "NONZERO",
-          loops: [[0, 1, 2, 3]],
-          fills: [
-            {
-              type: "SOLID",
-              visible: true,
-              opacity: 1,
-              blendMode: "NORMAL",
-              color: { r: 1, g: 1, b: 1 },
-              boundVariables: {},
-            },
-          ],
-          fillStyleId: "",
-        },
-      ],
-      segments: [
-        {
-          start: 0,
-          end: 1,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 1,
-          end: 2,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 2,
-          end: 3,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 3,
-          end: 0,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-      ],
-      vertices: [
-        {
-          x: 0,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 409,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 409,
-          y: 511,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 0,
-          y: 511,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-      ],
-    };
-    vector_4235_1740.vectorPaths = [
-      {
-        windingRule: "NONZERO",
-        data: "M 0 0 L 409 0 L 409 511 L 0 511 L 0 0 Z",
-      },
-    ];
+    text_4244_3762.x = 159.5;
+    text_4244_3762.autoRename = false;
 
-    // Create VECTOR
-    var vector_4235_1743 = figma.createVector();
-    frame_4232_1294.appendChild(vector_4235_1743);
-    vector_4235_1743.resize(409.0, 511.0);
-    vector_4235_1743.name = "Rectangle 3";
-    vector_4235_1743.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 1, g: 1, b: 1 },
-        boundVariables: {},
-      },
+    // Font properties
+    text_4244_3762.fontName = {
+      family: "Roboto",
+      style: "Bold",
+    };
+    text_4244_3762.characters = "Full name";
+    text_4244_3762.fontSize = 21;
+    text_4244_3762.listSpacing = 0;
+    text_4244_3762.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3762.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_3762.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_3763 = figma.createText();
+    frame_4244_3761.appendChild(text_4244_3763);
+    text_4244_3763.fillStyleId = black_4902.id;
+    text_4244_3763.resize(62.0, 26.0);
+    text_4244_3763.name = "Job Title";
+    text_4244_3763.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
     ];
-    vector_4235_1743.strokes = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    text_4244_3763.x = 174.5;
+    text_4244_3763.y = 32;
+    text_4244_3763.autoRename = false;
+
+    // Font properties
+    text_4244_3763.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_3763.characters = "Job title";
+    text_4244_3763.fontSize = 17;
+    text_4244_3763.listSpacing = 0;
+    text_4244_3763.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3763.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_3764 = figma.createText();
+    frame_4244_3760.appendChild(text_4244_3764);
+    text_4244_3764.fillStyleId = black_4902.id;
+    text_4244_3764.resize(411.0, 52.0);
+    text_4244_3764.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
     ];
-    vector_4235_1743.strokeAlign = "INSIDE";
-    vector_4235_1743.relativeTransform = [
-      [1, 0, 897],
+    text_4244_3764.y = 75;
+    text_4244_3764.layoutAlign = "STRETCH";
+    text_4244_3764.autoRename = false;
+
+    // Font properties
+    text_4244_3764.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_3764.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_3764.fontSize = 17;
+    text_4244_3764.listSpacing = 0;
+    text_4244_3764.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_3764.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_3765 = figma.createFrame();
+    frame_4244_3758.appendChild(frame_4244_3765);
+    frame_4244_3765.resize(100.0, 24.0);
+    frame_4244_3765.primaryAxisSizingMode = "AUTO";
+    frame_4244_3765.counterAxisSizingMode = "AUTO";
+    frame_4244_3765.name = "Social Icons";
+    frame_4244_3765.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_3765.x = 155.5;
+    frame_4244_3765.y = 630;
+    frame_4244_3765.fills = [];
+    frame_4244_3765.strokeTopWeight = 1;
+    frame_4244_3765.strokeBottomWeight = 1;
+    frame_4244_3765.strokeLeftWeight = 1;
+    frame_4244_3765.strokeRightWeight = 1;
+    frame_4244_3765.clipsContent = false;
+    frame_4244_3765.layoutMode = "HORIZONTAL";
+    frame_4244_3765.counterAxisSizingMode = "AUTO";
+    frame_4244_3765.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4188 = figma.createFrame();
+    frame_4244_3756.appendChild(frame_4244_4188);
+    frame_4244_4188.resize(411.0, 588.0);
+    frame_4244_4188.name = "Row";
+    frame_4244_4188.relativeTransform = [
+      [1, 0, 450],
       [0, 1, 0],
     ];
-    vector_4235_1743.x = 897;
-    vector_4235_1743.vectorNetwork = {
-      regions: [
-        {
-          windingRule: "NONZERO",
-          loops: [[0, 1, 2, 3]],
-          fills: [
-            {
-              type: "SOLID",
-              visible: true,
-              opacity: 1,
-              blendMode: "NORMAL",
-              color: { r: 1, g: 1, b: 1 },
-              boundVariables: {},
-            },
-          ],
-          fillStyleId: "",
-        },
-      ],
-      segments: [
-        {
-          start: 0,
-          end: 1,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 1,
-          end: 2,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 2,
-          end: 3,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 3,
-          end: 0,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-      ],
-      vertices: [
-        {
-          x: 0,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 409,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 409,
-          y: 511,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 0,
-          y: 511,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-      ],
-    };
-    vector_4235_1743.vectorPaths = [
+    frame_4244_4188.x = 450;
+    frame_4244_4188.fills = [];
+    frame_4244_4188.primaryAxisSizingMode = "FIXED";
+    frame_4244_4188.strokeTopWeight = 1;
+    frame_4244_4188.strokeBottomWeight = 1;
+    frame_4244_4188.strokeLeftWeight = 1;
+    frame_4244_4188.strokeRightWeight = 1;
+    frame_4244_4188.clipsContent = false;
+    frame_4244_4188.expanded = false;
+    frame_4244_4188.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_4189 = figma.createFrame();
+    frame_4244_4188.appendChild(frame_4244_4189);
+    frame_4244_4189.resize(411.0, 588.0);
+    frame_4244_4189.primaryAxisSizingMode = "AUTO";
+    frame_4244_4189.name = "Card";
+    frame_4244_4189.layoutGrow = 1;
+    frame_4244_4189.fills = [];
+    frame_4244_4189.counterAxisAlignItems = "CENTER";
+    frame_4244_4189.strokeTopWeight = 1;
+    frame_4244_4189.strokeBottomWeight = 1;
+    frame_4244_4189.strokeLeftWeight = 1;
+    frame_4244_4189.strokeRightWeight = 1;
+    frame_4244_4189.clipsContent = false;
+    frame_4244_4189.itemSpacing = 24;
+
+    // Create RECTANGLE
+    var rectangle_4244_4190 = figma.createRectangle();
+    frame_4244_4189.appendChild(rectangle_4244_4190);
+    rectangle_4244_4190.resize(411.0, 411.0);
+    rectangle_4244_4190.name = "Rectangle 1";
+    rectangle_4244_4190.fills = [
       {
-        windingRule: "NONZERO",
-        data: "M 0 0 L 409 0 L 409 511 L 0 511 L 0 0 Z",
+        type: "SOLID",
+        visible: true,
+        opacity: 1,
+        blendMode: "NORMAL",
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
+        boundVariables: {},
       },
     ];
+    rectangle_4244_4190.constrainProportions = true;
+    rectangle_4244_4190.strokeTopWeight = 1;
+    rectangle_4244_4190.strokeBottomWeight = 1;
+    rectangle_4244_4190.strokeLeftWeight = 1;
+    rectangle_4244_4190.strokeRightWeight = 1;
 
     // Create TEXT
-    var text_4235_1831 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_1831);
-    text_4235_1831.resize(112.0, 36.0);
-    text_4235_1831.name = "Basic plan";
-    text_4235_1831.fills = [
+    var text_4244_4191 = figma.createText();
+    frame_4244_4189.appendChild(text_4244_4191);
+    text_4244_4191.resize(117.0, 26.0);
+    text_4244_4191.name = "PLACEHOLDER";
+    text_4244_4191.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -518,65 +542,228 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_1831.relativeTransform = [
-      [1, 0, 149],
-      [0, 1, 34],
+    text_4244_4191.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
     ];
-    text_4235_1831.x = 149;
-    text_4235_1831.y = 34;
+    text_4244_4191.x = 147;
+    text_4244_4191.y = 193;
 
     // Font properties
-    text_4235_1831.fontName = {
+    text_4244_4191.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_1831.characters = "Basic plan";
-    text_4235_1831.fontSize = 24;
-    text_4235_1831.listSpacing = 0;
-    text_4235_1831.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_1831.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_1831.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4191.characters = "PLACEHOLDER";
+    text_4244_4191.fontSize = 17;
+    text_4244_4191.listSpacing = 0;
+    text_4244_4191.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4191.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4191.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4192 = figma.createFrame();
+    frame_4244_4189.appendChild(frame_4244_4192);
+    frame_4244_4192.resize(411.0, 123.0);
+    frame_4244_4192.primaryAxisSizingMode = "AUTO";
+    frame_4244_4192.name = "Content";
+    frame_4244_4192.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_4192.y = 434;
+    frame_4244_4192.layoutAlign = "STRETCH";
+    frame_4244_4192.fills = [];
+    frame_4244_4192.counterAxisAlignItems = "CENTER";
+    frame_4244_4192.strokeTopWeight = 1;
+    frame_4244_4192.strokeBottomWeight = 1;
+    frame_4244_4192.strokeLeftWeight = 1;
+    frame_4244_4192.strokeRightWeight = 1;
+    frame_4244_4192.clipsContent = false;
+    frame_4244_4192.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_4193 = figma.createFrame();
+    frame_4244_4192.appendChild(frame_4244_4193);
+    frame_4244_4193.resize(411.0, 58.0);
+    frame_4244_4193.primaryAxisSizingMode = "AUTO";
+    frame_4244_4193.name = "Title";
+    frame_4244_4193.layoutAlign = "STRETCH";
+    frame_4244_4193.fills = [];
+    frame_4244_4193.counterAxisAlignItems = "CENTER";
+    frame_4244_4193.strokeTopWeight = 1;
+    frame_4244_4193.strokeBottomWeight = 1;
+    frame_4244_4193.strokeLeftWeight = 1;
+    frame_4244_4193.strokeRightWeight = 1;
+    frame_4244_4193.clipsContent = false;
+    frame_4244_4193.layoutMode = "VERTICAL";
 
     // Create TEXT
-    var text_4235_1923 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_1923);
-    text_4235_1923.resize(58.0, 48.0);
-    text_4235_1923.name = "/mo";
-    text_4235_1923.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4194 = figma.createText();
+    frame_4244_4193.appendChild(text_4244_4194);
+    text_4244_4194.fillStyleId = black_4902.id;
+    text_4244_4194.resize(92.0, 32.0);
+    text_4244_4194.name = "Name";
+    text_4244_4194.relativeTransform = [
+      [1, 0, 159.5],
+      [0, 1, 0],
     ];
-    text_4235_1923.relativeTransform = [
-      [1, 0, 235],
-      [0, 1, 105],
-    ];
-    text_4235_1923.x = 235;
-    text_4235_1923.y = 105;
+    text_4244_4194.x = 159.5;
+    text_4244_4194.autoRename = false;
 
     // Font properties
-    text_4235_1923.fontName = {
+    text_4244_4194.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_1923.characters = "/mo";
-    text_4235_1923.fontSize = 32;
-    text_4235_1923.listSpacing = 0;
-    text_4235_1923.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_1923.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_1923.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4194.characters = "Full name";
+    text_4244_4194.fontSize = 21;
+    text_4244_4194.listSpacing = 0;
+    text_4244_4194.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4194.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4194.textAutoResize = "HEIGHT";
 
     // Create TEXT
-    var text_4235_2014 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2014);
-    text_4235_2014.resize(58.0, 48.0);
-    text_4235_2014.name = "/mo";
-    text_4235_2014.fills = [
+    var text_4244_4195 = figma.createText();
+    frame_4244_4193.appendChild(text_4244_4195);
+    text_4244_4195.fillStyleId = black_4902.id;
+    text_4244_4195.resize(62.0, 26.0);
+    text_4244_4195.name = "Job Title";
+    text_4244_4195.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
+    ];
+    text_4244_4195.x = 174.5;
+    text_4244_4195.y = 32;
+    text_4244_4195.autoRename = false;
+
+    // Font properties
+    text_4244_4195.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4195.characters = "Job title";
+    text_4244_4195.fontSize = 17;
+    text_4244_4195.listSpacing = 0;
+    text_4244_4195.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4195.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4196 = figma.createText();
+    frame_4244_4192.appendChild(text_4244_4196);
+    text_4244_4196.fillStyleId = black_4902.id;
+    text_4244_4196.resize(411.0, 52.0);
+    text_4244_4196.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
+    ];
+    text_4244_4196.y = 75;
+    text_4244_4196.layoutAlign = "STRETCH";
+    text_4244_4196.autoRename = false;
+
+    // Font properties
+    text_4244_4196.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4196.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_4196.fontSize = 17;
+    text_4244_4196.listSpacing = 0;
+    text_4244_4196.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4196.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4197 = figma.createFrame();
+    frame_4244_4189.appendChild(frame_4244_4197);
+    frame_4244_4197.resize(100.0, 24.0);
+    frame_4244_4197.primaryAxisSizingMode = "AUTO";
+    frame_4244_4197.counterAxisSizingMode = "AUTO";
+    frame_4244_4197.name = "Social Icons";
+    frame_4244_4197.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_4197.x = 155.5;
+    frame_4244_4197.y = 630;
+    frame_4244_4197.fills = [];
+    frame_4244_4197.strokeTopWeight = 1;
+    frame_4244_4197.strokeBottomWeight = 1;
+    frame_4244_4197.strokeLeftWeight = 1;
+    frame_4244_4197.strokeRightWeight = 1;
+    frame_4244_4197.clipsContent = false;
+    frame_4244_4197.layoutMode = "HORIZONTAL";
+    frame_4244_4197.counterAxisSizingMode = "AUTO";
+    frame_4244_4197.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4226 = figma.createFrame();
+    frame_4244_3756.appendChild(frame_4244_4226);
+    frame_4244_4226.resize(411.0, 588.0);
+    frame_4244_4226.name = "Row";
+    frame_4244_4226.relativeTransform = [
+      [1, 0, 900],
+      [0, 1, 0],
+    ];
+    frame_4244_4226.x = 900;
+    frame_4244_4226.fills = [];
+    frame_4244_4226.primaryAxisSizingMode = "FIXED";
+    frame_4244_4226.strokeTopWeight = 1;
+    frame_4244_4226.strokeBottomWeight = 1;
+    frame_4244_4226.strokeLeftWeight = 1;
+    frame_4244_4226.strokeRightWeight = 1;
+    frame_4244_4226.clipsContent = false;
+    frame_4244_4226.expanded = false;
+    frame_4244_4226.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_4227 = figma.createFrame();
+    frame_4244_4226.appendChild(frame_4244_4227);
+    frame_4244_4227.resize(411.0, 588.0);
+    frame_4244_4227.primaryAxisSizingMode = "AUTO";
+    frame_4244_4227.name = "Card";
+    frame_4244_4227.layoutGrow = 1;
+    frame_4244_4227.fills = [];
+    frame_4244_4227.counterAxisAlignItems = "CENTER";
+    frame_4244_4227.strokeTopWeight = 1;
+    frame_4244_4227.strokeBottomWeight = 1;
+    frame_4244_4227.strokeLeftWeight = 1;
+    frame_4244_4227.strokeRightWeight = 1;
+    frame_4244_4227.clipsContent = false;
+    frame_4244_4227.expanded = false;
+    frame_4244_4227.itemSpacing = 24;
+
+    // Create RECTANGLE
+    var rectangle_4244_4228 = figma.createRectangle();
+    frame_4244_4227.appendChild(rectangle_4244_4228);
+    rectangle_4244_4228.resize(411.0, 411.0);
+    rectangle_4244_4228.name = "Rectangle 1";
+    rectangle_4244_4228.fills = [
+      {
+        type: "SOLID",
+        visible: true,
+        opacity: 1,
+        blendMode: "NORMAL",
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
+        boundVariables: {},
+      },
+    ];
+    rectangle_4244_4228.constrainProportions = true;
+    rectangle_4244_4228.strokeTopWeight = 1;
+    rectangle_4244_4228.strokeBottomWeight = 1;
+    rectangle_4244_4228.strokeLeftWeight = 1;
+    rectangle_4244_4228.strokeRightWeight = 1;
+
+    // Create TEXT
+    var text_4244_4229 = figma.createText();
+    frame_4244_4227.appendChild(text_4244_4229);
+    text_4244_4229.resize(117.0, 26.0);
+    text_4244_4229.name = "PLACEHOLDER";
+    text_4244_4229.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -586,65 +773,261 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_2014.relativeTransform = [
-      [1, 0, 674],
-      [0, 1, 105],
+    text_4244_4229.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
     ];
-    text_4235_2014.x = 674;
-    text_4235_2014.y = 105;
+    text_4244_4229.x = 147;
+    text_4244_4229.y = 193;
 
     // Font properties
-    text_4235_2014.fontName = {
+    text_4244_4229.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_2014.characters = "/mo";
-    text_4235_2014.fontSize = 32;
-    text_4235_2014.listSpacing = 0;
-    text_4235_2014.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2014.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_2014.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4229.characters = "PLACEHOLDER";
+    text_4244_4229.fontSize = 17;
+    text_4244_4229.listSpacing = 0;
+    text_4244_4229.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4229.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4229.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4230 = figma.createFrame();
+    frame_4244_4227.appendChild(frame_4244_4230);
+    frame_4244_4230.resize(411.0, 123.0);
+    frame_4244_4230.primaryAxisSizingMode = "AUTO";
+    frame_4244_4230.name = "Content";
+    frame_4244_4230.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_4230.y = 434;
+    frame_4244_4230.layoutAlign = "STRETCH";
+    frame_4244_4230.fills = [];
+    frame_4244_4230.counterAxisAlignItems = "CENTER";
+    frame_4244_4230.strokeTopWeight = 1;
+    frame_4244_4230.strokeBottomWeight = 1;
+    frame_4244_4230.strokeLeftWeight = 1;
+    frame_4244_4230.strokeRightWeight = 1;
+    frame_4244_4230.clipsContent = false;
+    frame_4244_4230.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_4231 = figma.createFrame();
+    frame_4244_4230.appendChild(frame_4244_4231);
+    frame_4244_4231.resize(411.0, 58.0);
+    frame_4244_4231.primaryAxisSizingMode = "AUTO";
+    frame_4244_4231.name = "Title";
+    frame_4244_4231.layoutAlign = "STRETCH";
+    frame_4244_4231.fills = [];
+    frame_4244_4231.counterAxisAlignItems = "CENTER";
+    frame_4244_4231.strokeTopWeight = 1;
+    frame_4244_4231.strokeBottomWeight = 1;
+    frame_4244_4231.strokeLeftWeight = 1;
+    frame_4244_4231.strokeRightWeight = 1;
+    frame_4244_4231.clipsContent = false;
+    frame_4244_4231.layoutMode = "VERTICAL";
 
     // Create TEXT
-    var text_4235_2016 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2016);
-    text_4235_2016.resize(58.0, 48.0);
-    text_4235_2016.name = "/mo";
-    text_4235_2016.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4232 = figma.createText();
+    frame_4244_4231.appendChild(text_4244_4232);
+    text_4244_4232.fillStyleId = black_4902.id;
+    text_4244_4232.resize(92.0, 32.0);
+    text_4244_4232.name = "Name";
+    text_4244_4232.relativeTransform = [
+      [1, 0, 159.5],
+      [0, 1, 0],
     ];
-    text_4235_2016.relativeTransform = [
-      [1, 0, 1129],
-      [0, 1, 105],
-    ];
-    text_4235_2016.x = 1129;
-    text_4235_2016.y = 105;
+    text_4244_4232.x = 159.5;
+    text_4244_4232.autoRename = false;
 
     // Font properties
-    text_4235_2016.fontName = {
+    text_4244_4232.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_2016.characters = "/mo";
-    text_4235_2016.fontSize = 32;
-    text_4235_2016.listSpacing = 0;
-    text_4235_2016.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2016.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_2016.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4232.characters = "Full name";
+    text_4244_4232.fontSize = 21;
+    text_4244_4232.listSpacing = 0;
+    text_4244_4232.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4232.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4232.textAutoResize = "HEIGHT";
 
     // Create TEXT
-    var text_4235_1922 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_1922);
-    text_4235_1922.resize(111.0, 96.0);
-    text_4235_1922.name = "$19";
-    text_4235_1922.fills = [
+    var text_4244_4233 = figma.createText();
+    frame_4244_4231.appendChild(text_4244_4233);
+    text_4244_4233.fillStyleId = black_4902.id;
+    text_4244_4233.resize(62.0, 26.0);
+    text_4244_4233.name = "Job Title";
+    text_4244_4233.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
+    ];
+    text_4244_4233.x = 174.5;
+    text_4244_4233.y = 32;
+    text_4244_4233.autoRename = false;
+
+    // Font properties
+    text_4244_4233.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4233.characters = "Job title";
+    text_4244_4233.fontSize = 17;
+    text_4244_4233.listSpacing = 0;
+    text_4244_4233.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4233.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4234 = figma.createText();
+    frame_4244_4230.appendChild(text_4244_4234);
+    text_4244_4234.fillStyleId = black_4902.id;
+    text_4244_4234.resize(411.0, 52.0);
+    text_4244_4234.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
+    ];
+    text_4244_4234.y = 75;
+    text_4244_4234.layoutAlign = "STRETCH";
+    text_4244_4234.autoRename = false;
+
+    // Font properties
+    text_4244_4234.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4234.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_4234.fontSize = 17;
+    text_4244_4234.listSpacing = 0;
+    text_4244_4234.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4234.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4235 = figma.createFrame();
+    frame_4244_4227.appendChild(frame_4244_4235);
+    frame_4244_4235.resize(100.0, 24.0);
+    frame_4244_4235.primaryAxisSizingMode = "AUTO";
+    frame_4244_4235.counterAxisSizingMode = "AUTO";
+    frame_4244_4235.name = "Social Icons";
+    frame_4244_4235.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_4235.x = 155.5;
+    frame_4244_4235.y = 630;
+    frame_4244_4235.fills = [];
+    frame_4244_4235.strokeTopWeight = 1;
+    frame_4244_4235.strokeBottomWeight = 1;
+    frame_4244_4235.strokeLeftWeight = 1;
+    frame_4244_4235.strokeRightWeight = 1;
+    frame_4244_4235.clipsContent = false;
+    frame_4244_4235.layoutMode = "HORIZONTAL";
+    frame_4244_4235.counterAxisSizingMode = "AUTO";
+    frame_4244_4235.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4378 = figma.createFrame();
+    frame_4244_3749.appendChild(frame_4244_4378);
+    frame_4244_4378.resize(1312.0, 775.0);
+    frame_4244_4378.primaryAxisSizingMode = "AUTO";
+    frame_4244_4378.name = "Content";
+    frame_4244_4378.relativeTransform = [
+      [1, 0, 64],
+      [0, 1, 998],
+    ];
+    frame_4244_4378.x = 64;
+    frame_4244_4378.y = 998;
+    frame_4244_4378.layoutAlign = "STRETCH";
+    frame_4244_4378.fills = [];
+    frame_4244_4378.counterAxisAlignItems = "CENTER";
+    frame_4244_4378.strokeTopWeight = 1;
+    frame_4244_4378.strokeBottomWeight = 1;
+    frame_4244_4378.strokeLeftWeight = 1;
+    frame_4244_4378.strokeRightWeight = 1;
+    frame_4244_4378.clipsContent = false;
+    frame_4244_4378.layoutMode = "VERTICAL";
+    frame_4244_4378.itemSpacing = 96;
+
+    // Create FRAME
+    var frame_4244_4379 = figma.createFrame();
+    frame_4244_4378.appendChild(frame_4244_4379);
+    frame_4244_4379.resize(1312.0, 588.0);
+    frame_4244_4379.primaryAxisSizingMode = "AUTO";
+    frame_4244_4379.name = "Content";
+    frame_4244_4379.layoutAlign = "STRETCH";
+    frame_4244_4379.fills = [];
+    frame_4244_4379.strokeTopWeight = 1;
+    frame_4244_4379.strokeBottomWeight = 1;
+    frame_4244_4379.strokeLeftWeight = 1;
+    frame_4244_4379.strokeRightWeight = 1;
+    frame_4244_4379.clipsContent = false;
+    frame_4244_4379.expanded = false;
+    frame_4244_4379.itemSpacing = 64;
+
+    // Create FRAME
+    var frame_4244_4380 = figma.createFrame();
+    frame_4244_4379.appendChild(frame_4244_4380);
+    frame_4244_4380.resize(411.0, 588.0);
+    frame_4244_4380.name = "Row";
+    frame_4244_4380.fills = [];
+    frame_4244_4380.primaryAxisSizingMode = "FIXED";
+    frame_4244_4380.strokeTopWeight = 1;
+    frame_4244_4380.strokeBottomWeight = 1;
+    frame_4244_4380.strokeLeftWeight = 1;
+    frame_4244_4380.strokeRightWeight = 1;
+    frame_4244_4380.clipsContent = false;
+    frame_4244_4380.expanded = false;
+    frame_4244_4380.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_4381 = figma.createFrame();
+    frame_4244_4380.appendChild(frame_4244_4381);
+    frame_4244_4381.resize(411.0, 588.0);
+    frame_4244_4381.primaryAxisSizingMode = "AUTO";
+    frame_4244_4381.name = "Card";
+    frame_4244_4381.layoutGrow = 1;
+    frame_4244_4381.fills = [];
+    frame_4244_4381.counterAxisAlignItems = "CENTER";
+    frame_4244_4381.strokeTopWeight = 1;
+    frame_4244_4381.strokeBottomWeight = 1;
+    frame_4244_4381.strokeLeftWeight = 1;
+    frame_4244_4381.strokeRightWeight = 1;
+    frame_4244_4381.clipsContent = false;
+    frame_4244_4381.itemSpacing = 24;
+
+    // Create RECTANGLE
+    var rectangle_4244_4382 = figma.createRectangle();
+    frame_4244_4381.appendChild(rectangle_4244_4382);
+    rectangle_4244_4382.resize(411.0, 411.0);
+    rectangle_4244_4382.name = "Rectangle 1";
+    rectangle_4244_4382.fills = [
+      {
+        type: "SOLID",
+        visible: true,
+        opacity: 1,
+        blendMode: "NORMAL",
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
+        boundVariables: {},
+      },
+    ];
+    rectangle_4244_4382.constrainProportions = true;
+    rectangle_4244_4382.strokeTopWeight = 1;
+    rectangle_4244_4382.strokeBottomWeight = 1;
+    rectangle_4244_4382.strokeLeftWeight = 1;
+    rectangle_4244_4382.strokeRightWeight = 1;
+
+    // Create TEXT
+    var text_4244_4383 = figma.createText();
+    frame_4244_4381.appendChild(text_4244_4383);
+    text_4244_4383.resize(117.0, 26.0);
+    text_4244_4383.name = "PLACEHOLDER";
+    text_4244_4383.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -654,65 +1037,228 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_1922.relativeTransform = [
-      [1, 0, 122],
-      [0, 1, 70],
+    text_4244_4383.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
     ];
-    text_4235_1922.x = 122;
-    text_4235_1922.y = 70;
+    text_4244_4383.x = 147;
+    text_4244_4383.y = 193;
 
     // Font properties
-    text_4235_1922.fontName = {
+    text_4244_4383.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_1922.characters = "$19";
-    text_4235_1922.fontSize = 64;
-    text_4235_1922.listSpacing = 0;
-    text_4235_1922.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_1922.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_1922.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4383.characters = "PLACEHOLDER";
+    text_4244_4383.fontSize = 17;
+    text_4244_4383.listSpacing = 0;
+    text_4244_4383.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4383.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4383.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4384 = figma.createFrame();
+    frame_4244_4381.appendChild(frame_4244_4384);
+    frame_4244_4384.resize(411.0, 123.0);
+    frame_4244_4384.primaryAxisSizingMode = "AUTO";
+    frame_4244_4384.name = "Content";
+    frame_4244_4384.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_4384.y = 434;
+    frame_4244_4384.layoutAlign = "STRETCH";
+    frame_4244_4384.fills = [];
+    frame_4244_4384.counterAxisAlignItems = "CENTER";
+    frame_4244_4384.strokeTopWeight = 1;
+    frame_4244_4384.strokeBottomWeight = 1;
+    frame_4244_4384.strokeLeftWeight = 1;
+    frame_4244_4384.strokeRightWeight = 1;
+    frame_4244_4384.clipsContent = false;
+    frame_4244_4384.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_4385 = figma.createFrame();
+    frame_4244_4384.appendChild(frame_4244_4385);
+    frame_4244_4385.resize(411.0, 58.0);
+    frame_4244_4385.primaryAxisSizingMode = "AUTO";
+    frame_4244_4385.name = "Title";
+    frame_4244_4385.layoutAlign = "STRETCH";
+    frame_4244_4385.fills = [];
+    frame_4244_4385.counterAxisAlignItems = "CENTER";
+    frame_4244_4385.strokeTopWeight = 1;
+    frame_4244_4385.strokeBottomWeight = 1;
+    frame_4244_4385.strokeLeftWeight = 1;
+    frame_4244_4385.strokeRightWeight = 1;
+    frame_4244_4385.clipsContent = false;
+    frame_4244_4385.layoutMode = "VERTICAL";
 
     // Create TEXT
-    var text_4235_2015 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2015);
-    text_4235_2015.resize(111.0, 96.0);
-    text_4235_2015.name = "$29";
-    text_4235_2015.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4386 = figma.createText();
+    frame_4244_4385.appendChild(text_4244_4386);
+    text_4244_4386.fillStyleId = black_4902.id;
+    text_4244_4386.resize(92.0, 32.0);
+    text_4244_4386.name = "Name";
+    text_4244_4386.relativeTransform = [
+      [1, 0, 159.5],
+      [0, 1, 0],
     ];
-    text_4235_2015.relativeTransform = [
-      [1, 0, 561],
-      [0, 1, 70],
-    ];
-    text_4235_2015.x = 561;
-    text_4235_2015.y = 70;
+    text_4244_4386.x = 159.5;
+    text_4244_4386.autoRename = false;
 
     // Font properties
-    text_4235_2015.fontName = {
+    text_4244_4386.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_2015.characters = "$29";
-    text_4235_2015.fontSize = 64;
-    text_4235_2015.listSpacing = 0;
-    text_4235_2015.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2015.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_2015.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4386.characters = "Full name";
+    text_4244_4386.fontSize = 21;
+    text_4244_4386.listSpacing = 0;
+    text_4244_4386.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4386.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4386.textAutoResize = "HEIGHT";
 
     // Create TEXT
-    var text_4235_2017 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2017);
-    text_4235_2017.resize(111.0, 96.0);
-    text_4235_2017.name = "$49";
-    text_4235_2017.fills = [
+    var text_4244_4387 = figma.createText();
+    frame_4244_4385.appendChild(text_4244_4387);
+    text_4244_4387.fillStyleId = black_4902.id;
+    text_4244_4387.resize(62.0, 26.0);
+    text_4244_4387.name = "Job Title";
+    text_4244_4387.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
+    ];
+    text_4244_4387.x = 174.5;
+    text_4244_4387.y = 32;
+    text_4244_4387.autoRename = false;
+
+    // Font properties
+    text_4244_4387.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4387.characters = "Job title";
+    text_4244_4387.fontSize = 17;
+    text_4244_4387.listSpacing = 0;
+    text_4244_4387.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4387.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4388 = figma.createText();
+    frame_4244_4384.appendChild(text_4244_4388);
+    text_4244_4388.fillStyleId = black_4902.id;
+    text_4244_4388.resize(411.0, 52.0);
+    text_4244_4388.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
+    ];
+    text_4244_4388.y = 75;
+    text_4244_4388.layoutAlign = "STRETCH";
+    text_4244_4388.autoRename = false;
+
+    // Font properties
+    text_4244_4388.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4388.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_4388.fontSize = 17;
+    text_4244_4388.listSpacing = 0;
+    text_4244_4388.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4388.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4389 = figma.createFrame();
+    frame_4244_4381.appendChild(frame_4244_4389);
+    frame_4244_4389.resize(100.0, 24.0);
+    frame_4244_4389.primaryAxisSizingMode = "AUTO";
+    frame_4244_4389.counterAxisSizingMode = "AUTO";
+    frame_4244_4389.name = "Social Icons";
+    frame_4244_4389.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_4389.x = 155.5;
+    frame_4244_4389.y = 630;
+    frame_4244_4389.fills = [];
+    frame_4244_4389.strokeTopWeight = 1;
+    frame_4244_4389.strokeBottomWeight = 1;
+    frame_4244_4389.strokeLeftWeight = 1;
+    frame_4244_4389.strokeRightWeight = 1;
+    frame_4244_4389.clipsContent = false;
+    frame_4244_4389.layoutMode = "HORIZONTAL";
+    frame_4244_4389.counterAxisSizingMode = "AUTO";
+    frame_4244_4389.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4412 = figma.createFrame();
+    frame_4244_4379.appendChild(frame_4244_4412);
+    frame_4244_4412.resize(411.0, 588.0);
+    frame_4244_4412.name = "Row";
+    frame_4244_4412.relativeTransform = [
+      [1, 0, 450],
+      [0, 1, 0],
+    ];
+    frame_4244_4412.x = 450;
+    frame_4244_4412.fills = [];
+    frame_4244_4412.primaryAxisSizingMode = "FIXED";
+    frame_4244_4412.strokeTopWeight = 1;
+    frame_4244_4412.strokeBottomWeight = 1;
+    frame_4244_4412.strokeLeftWeight = 1;
+    frame_4244_4412.strokeRightWeight = 1;
+    frame_4244_4412.clipsContent = false;
+    frame_4244_4412.expanded = false;
+    frame_4244_4412.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_4413 = figma.createFrame();
+    frame_4244_4412.appendChild(frame_4244_4413);
+    frame_4244_4413.resize(411.0, 588.0);
+    frame_4244_4413.primaryAxisSizingMode = "AUTO";
+    frame_4244_4413.name = "Card";
+    frame_4244_4413.layoutGrow = 1;
+    frame_4244_4413.fills = [];
+    frame_4244_4413.counterAxisAlignItems = "CENTER";
+    frame_4244_4413.strokeTopWeight = 1;
+    frame_4244_4413.strokeBottomWeight = 1;
+    frame_4244_4413.strokeLeftWeight = 1;
+    frame_4244_4413.strokeRightWeight = 1;
+    frame_4244_4413.clipsContent = false;
+    frame_4244_4413.expanded = false;
+    frame_4244_4413.itemSpacing = 24;
+
+    // Create RECTANGLE
+    var rectangle_4244_4414 = figma.createRectangle();
+    frame_4244_4413.appendChild(rectangle_4244_4414);
+    rectangle_4244_4414.resize(411.0, 411.0);
+    rectangle_4244_4414.name = "Rectangle 1";
+    rectangle_4244_4414.fills = [
+      {
+        type: "SOLID",
+        visible: true,
+        opacity: 1,
+        blendMode: "NORMAL",
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
+        boundVariables: {},
+      },
+    ];
+    rectangle_4244_4414.constrainProportions = true;
+    rectangle_4244_4414.strokeTopWeight = 1;
+    rectangle_4244_4414.strokeBottomWeight = 1;
+    rectangle_4244_4414.strokeLeftWeight = 1;
+    rectangle_4244_4414.strokeRightWeight = 1;
+
+    // Create TEXT
+    var text_4244_4415 = figma.createText();
+    frame_4244_4413.appendChild(text_4244_4415);
+    text_4244_4415.resize(117.0, 26.0);
+    text_4244_4415.name = "PLACEHOLDER";
+    text_4244_4415.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -722,65 +1268,227 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_2017.relativeTransform = [
-      [1, 0, 1016],
-      [0, 1, 70],
+    text_4244_4415.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
     ];
-    text_4235_2017.x = 1016;
-    text_4235_2017.y = 70;
+    text_4244_4415.x = 147;
+    text_4244_4415.y = 193;
 
     // Font properties
-    text_4235_2017.fontName = {
+    text_4244_4415.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_2017.characters = "$49";
-    text_4235_2017.fontSize = 64;
-    text_4235_2017.listSpacing = 0;
-    text_4235_2017.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2017.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_2017.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4415.characters = "PLACEHOLDER";
+    text_4244_4415.fontSize = 17;
+    text_4244_4415.listSpacing = 0;
+    text_4244_4415.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4415.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4415.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4416 = figma.createFrame();
+    frame_4244_4413.appendChild(frame_4244_4416);
+    frame_4244_4416.resize(411.0, 123.0);
+    frame_4244_4416.primaryAxisSizingMode = "AUTO";
+    frame_4244_4416.name = "Content";
+    frame_4244_4416.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_4416.y = 434;
+    frame_4244_4416.layoutAlign = "STRETCH";
+    frame_4244_4416.fills = [];
+    frame_4244_4416.counterAxisAlignItems = "CENTER";
+    frame_4244_4416.strokeTopWeight = 1;
+    frame_4244_4416.strokeBottomWeight = 1;
+    frame_4244_4416.strokeLeftWeight = 1;
+    frame_4244_4416.strokeRightWeight = 1;
+    frame_4244_4416.clipsContent = false;
+    frame_4244_4416.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_4417 = figma.createFrame();
+    frame_4244_4416.appendChild(frame_4244_4417);
+    frame_4244_4417.resize(411.0, 58.0);
+    frame_4244_4417.primaryAxisSizingMode = "AUTO";
+    frame_4244_4417.name = "Title";
+    frame_4244_4417.layoutAlign = "STRETCH";
+    frame_4244_4417.fills = [];
+    frame_4244_4417.counterAxisAlignItems = "CENTER";
+    frame_4244_4417.strokeTopWeight = 1;
+    frame_4244_4417.strokeBottomWeight = 1;
+    frame_4244_4417.strokeLeftWeight = 1;
+    frame_4244_4417.strokeRightWeight = 1;
+    frame_4244_4417.clipsContent = false;
+    frame_4244_4417.layoutMode = "VERTICAL";
 
     // Create TEXT
-    var text_4235_1920 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_1920);
-    text_4235_1920.resize(151.0, 36.0);
-    text_4235_1920.name = "Business plan";
-    text_4235_1920.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4418 = figma.createText();
+    frame_4244_4417.appendChild(text_4244_4418);
+    text_4244_4418.fillStyleId = black_4902.id;
+    text_4244_4418.resize(92.0, 32.0);
+    text_4244_4418.name = "Name";
+    text_4244_4418.relativeTransform = [
+      [1, 0, 159.5],
+      [0, 1, 0],
     ];
-    text_4235_1920.relativeTransform = [
-      [1, 0, 572],
-      [0, 1, 34],
-    ];
-    text_4235_1920.x = 572;
-    text_4235_1920.y = 34;
+    text_4244_4418.x = 159.5;
+    text_4244_4418.autoRename = false;
 
     // Font properties
-    text_4235_1920.fontName = {
+    text_4244_4418.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_1920.characters = "Business plan";
-    text_4235_1920.fontSize = 24;
-    text_4235_1920.listSpacing = 0;
-    text_4235_1920.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_1920.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_1920.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4418.characters = "Full name";
+    text_4244_4418.fontSize = 21;
+    text_4244_4418.listSpacing = 0;
+    text_4244_4418.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4418.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4418.textAutoResize = "HEIGHT";
 
     // Create TEXT
-    var text_4235_1921 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_1921);
-    text_4235_1921.resize(163.0, 36.0);
-    text_4235_1921.name = "Entreprise plan";
-    text_4235_1921.fills = [
+    var text_4244_4419 = figma.createText();
+    frame_4244_4417.appendChild(text_4244_4419);
+    text_4244_4419.fillStyleId = black_4902.id;
+    text_4244_4419.resize(62.0, 26.0);
+    text_4244_4419.name = "Job Title";
+    text_4244_4419.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
+    ];
+    text_4244_4419.x = 174.5;
+    text_4244_4419.y = 32;
+    text_4244_4419.autoRename = false;
+
+    // Font properties
+    text_4244_4419.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4419.characters = "Job title";
+    text_4244_4419.fontSize = 17;
+    text_4244_4419.listSpacing = 0;
+    text_4244_4419.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4419.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4420 = figma.createText();
+    frame_4244_4416.appendChild(text_4244_4420);
+    text_4244_4420.fillStyleId = black_4902.id;
+    text_4244_4420.resize(411.0, 52.0);
+    text_4244_4420.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
+    ];
+    text_4244_4420.y = 75;
+    text_4244_4420.layoutAlign = "STRETCH";
+    text_4244_4420.autoRename = false;
+
+    // Font properties
+    text_4244_4420.fontName = {
+      family: "Roboto",
+      style: "Regular",
+    };
+    text_4244_4420.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_4420.fontSize = 17;
+    text_4244_4420.listSpacing = 0;
+    text_4244_4420.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4420.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4421 = figma.createFrame();
+    frame_4244_4413.appendChild(frame_4244_4421);
+    frame_4244_4421.resize(100.0, 24.0);
+    frame_4244_4421.primaryAxisSizingMode = "AUTO";
+    frame_4244_4421.counterAxisSizingMode = "AUTO";
+    frame_4244_4421.name = "Social Icons";
+    frame_4244_4421.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_4421.x = 155.5;
+    frame_4244_4421.y = 630;
+    frame_4244_4421.fills = [];
+    frame_4244_4421.strokeTopWeight = 1;
+    frame_4244_4421.strokeBottomWeight = 1;
+    frame_4244_4421.strokeLeftWeight = 1;
+    frame_4244_4421.strokeRightWeight = 1;
+    frame_4244_4421.clipsContent = false;
+    frame_4244_4421.layoutMode = "HORIZONTAL";
+    frame_4244_4421.counterAxisSizingMode = "AUTO";
+    frame_4244_4421.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4444 = figma.createFrame();
+    frame_4244_4379.appendChild(frame_4244_4444);
+    frame_4244_4444.resize(411.0, 588.0);
+    frame_4244_4444.name = "Row";
+    frame_4244_4444.relativeTransform = [
+      [1, 0, 900],
+      [0, 1, 0],
+    ];
+    frame_4244_4444.x = 900;
+    frame_4244_4444.fills = [];
+    frame_4244_4444.primaryAxisSizingMode = "FIXED";
+    frame_4244_4444.strokeTopWeight = 1;
+    frame_4244_4444.strokeBottomWeight = 1;
+    frame_4244_4444.strokeLeftWeight = 1;
+    frame_4244_4444.strokeRightWeight = 1;
+    frame_4244_4444.clipsContent = false;
+    frame_4244_4444.expanded = false;
+    frame_4244_4444.itemSpacing = 48;
+
+    // Create FRAME
+    var frame_4244_4445 = figma.createFrame();
+    frame_4244_4444.appendChild(frame_4244_4445);
+    frame_4244_4445.resize(411.0, 588.0);
+    frame_4244_4445.primaryAxisSizingMode = "AUTO";
+    frame_4244_4445.name = "Card";
+    frame_4244_4445.layoutGrow = 1;
+    frame_4244_4445.fills = [];
+    frame_4244_4445.counterAxisAlignItems = "CENTER";
+    frame_4244_4445.strokeTopWeight = 1;
+    frame_4244_4445.strokeBottomWeight = 1;
+    frame_4244_4445.strokeLeftWeight = 1;
+    frame_4244_4445.strokeRightWeight = 1;
+    frame_4244_4445.clipsContent = false;
+    frame_4244_4445.itemSpacing = 24;
+
+    // Create RECTANGLE
+    var rectangle_4244_4446 = figma.createRectangle();
+    frame_4244_4445.appendChild(rectangle_4244_4446);
+    rectangle_4244_4446.resize(411.0, 411.0);
+    rectangle_4244_4446.name = "Rectangle 1";
+    rectangle_4244_4446.fills = [
+      {
+        type: "SOLID",
+        visible: true,
+        opacity: 1,
+        blendMode: "NORMAL",
+        color: {
+          r: 0.8509804010391235,
+          g: 0.8509804010391235,
+          b: 0.8509804010391235,
+        },
+        boundVariables: {},
+      },
+    ];
+    rectangle_4244_4446.constrainProportions = true;
+    rectangle_4244_4446.strokeTopWeight = 1;
+    rectangle_4244_4446.strokeBottomWeight = 1;
+    rectangle_4244_4446.strokeLeftWeight = 1;
+    rectangle_4244_4446.strokeRightWeight = 1;
+
+    // Create TEXT
+    var text_4244_4447 = figma.createText();
+    frame_4244_4445.appendChild(text_4244_4447);
+    text_4244_4447.resize(117.0, 26.0);
+    text_4244_4447.name = "PLACEHOLDER";
+    text_4244_4447.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -790,745 +1498,260 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_1921.relativeTransform = [
-      [1, 0, 1021],
-      [0, 1, 34],
+    text_4244_4447.relativeTransform = [
+      [1, 0, 147],
+      [0, 1, 193],
     ];
-    text_4235_1921.x = 1021;
-    text_4235_1921.y = 34;
+    text_4244_4447.x = 147;
+    text_4244_4447.y = 193;
 
     // Font properties
-    text_4235_1921.fontName = {
+    text_4244_4447.fontName = {
       family: "Roboto",
       style: "Bold",
     };
-    text_4235_1921.characters = "Entreprise plan";
-    text_4235_1921.fontSize = 24;
-    text_4235_1921.listSpacing = 0;
-    text_4235_1921.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_1921.fontName = { family: "Roboto", style: "Bold" };
-    text_4235_1921.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4447.characters = "PLACEHOLDER";
+    text_4244_4447.fontSize = 17;
+    text_4244_4447.listSpacing = 0;
+    text_4244_4447.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4447.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4447.textAutoResize = "WIDTH_AND_HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4448 = figma.createFrame();
+    frame_4244_4445.appendChild(frame_4244_4448);
+    frame_4244_4448.resize(411.0, 123.0);
+    frame_4244_4448.primaryAxisSizingMode = "AUTO";
+    frame_4244_4448.name = "Content";
+    frame_4244_4448.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 434],
+    ];
+    frame_4244_4448.y = 434;
+    frame_4244_4448.layoutAlign = "STRETCH";
+    frame_4244_4448.fills = [];
+    frame_4244_4448.counterAxisAlignItems = "CENTER";
+    frame_4244_4448.strokeTopWeight = 1;
+    frame_4244_4448.strokeBottomWeight = 1;
+    frame_4244_4448.strokeLeftWeight = 1;
+    frame_4244_4448.strokeRightWeight = 1;
+    frame_4244_4448.clipsContent = false;
+    frame_4244_4448.itemSpacing = 16;
+
+    // Create FRAME
+    var frame_4244_4449 = figma.createFrame();
+    frame_4244_4448.appendChild(frame_4244_4449);
+    frame_4244_4449.resize(411.0, 58.0);
+    frame_4244_4449.primaryAxisSizingMode = "AUTO";
+    frame_4244_4449.name = "Title";
+    frame_4244_4449.layoutAlign = "STRETCH";
+    frame_4244_4449.fills = [];
+    frame_4244_4449.counterAxisAlignItems = "CENTER";
+    frame_4244_4449.strokeTopWeight = 1;
+    frame_4244_4449.strokeBottomWeight = 1;
+    frame_4244_4449.strokeLeftWeight = 1;
+    frame_4244_4449.strokeRightWeight = 1;
+    frame_4244_4449.clipsContent = false;
+    frame_4244_4449.layoutMode = "VERTICAL";
 
     // Create TEXT
-    var text_4235_2018 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2018);
-    text_4235_2018.resize(101.0, 24.0);
-    text_4235_2018.name = "or $199 yearly";
-    text_4235_2018.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4450 = figma.createText();
+    frame_4244_4449.appendChild(text_4244_4450);
+    text_4244_4450.fillStyleId = black_4902.id;
+    text_4244_4450.resize(92.0, 32.0);
+    text_4244_4450.name = "Name";
+    text_4244_4450.relativeTransform = [
+      [1, 0, 159.5],
+      [0, 1, 0],
     ];
-    text_4235_2018.relativeTransform = [
-      [1, 0, 154],
-      [0, 1, 161],
-    ];
-    text_4235_2018.x = 154;
-    text_4235_2018.y = 161;
+    text_4244_4450.x = 159.5;
+    text_4244_4450.autoRename = false;
 
     // Font properties
-    text_4235_2018.fontName = {
+    text_4244_4450.fontName = {
+      family: "Roboto",
+      style: "Bold",
+    };
+    text_4244_4450.characters = "Full name";
+    text_4244_4450.fontSize = 21;
+    text_4244_4450.listSpacing = 0;
+    text_4244_4450.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4450.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4450.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4451 = figma.createText();
+    frame_4244_4449.appendChild(text_4244_4451);
+    text_4244_4451.fillStyleId = black_4902.id;
+    text_4244_4451.resize(62.0, 26.0);
+    text_4244_4451.name = "Job Title";
+    text_4244_4451.relativeTransform = [
+      [1, 0, 174.5],
+      [0, 1, 32],
+    ];
+    text_4244_4451.x = 174.5;
+    text_4244_4451.y = 32;
+    text_4244_4451.autoRename = false;
+
+    // Font properties
+    text_4244_4451.fontName = {
       family: "Roboto",
       style: "Regular",
     };
-    text_4235_2018.characters = "or $199 yearly";
-    text_4235_2018.fontSize = 16;
-    text_4235_2018.listSpacing = 0;
-    text_4235_2018.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2018.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4451.characters = "Job title";
+    text_4244_4451.fontSize = 17;
+    text_4244_4451.listSpacing = 0;
+    text_4244_4451.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4451.textAutoResize = "HEIGHT";
 
     // Create TEXT
-    var text_4235_2019 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2019);
-    text_4235_2019.resize(101.0, 24.0);
-    text_4235_2019.name = "or $199 yearly";
-    text_4235_2019.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4452 = figma.createText();
+    frame_4244_4448.appendChild(text_4244_4452);
+    text_4244_4452.fillStyleId = black_4902.id;
+    text_4244_4452.resize(411.0, 52.0);
+    text_4244_4452.relativeTransform = [
+      [1, 0, 0],
+      [0, 1, 75],
     ];
-    text_4235_2019.relativeTransform = [
-      [1, 0, 596],
-      [0, 1, 161],
-    ];
-    text_4235_2019.x = 596;
-    text_4235_2019.y = 161;
+    text_4244_4452.y = 75;
+    text_4244_4452.layoutAlign = "STRETCH";
+    text_4244_4452.autoRename = false;
 
     // Font properties
-    text_4235_2019.fontName = {
+    text_4244_4452.fontName = {
       family: "Roboto",
       style: "Regular",
     };
-    text_4235_2019.characters = "or $199 yearly";
-    text_4235_2019.fontSize = 16;
-    text_4235_2019.listSpacing = 0;
-    text_4235_2019.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2019.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4452.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.";
+    text_4244_4452.fontSize = 17;
+    text_4244_4452.listSpacing = 0;
+    text_4244_4452.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4452.textAutoResize = "HEIGHT";
+
+    // Create FRAME
+    var frame_4244_4453 = figma.createFrame();
+    frame_4244_4445.appendChild(frame_4244_4453);
+    frame_4244_4453.resize(100.0, 24.0);
+    frame_4244_4453.primaryAxisSizingMode = "AUTO";
+    frame_4244_4453.counterAxisSizingMode = "AUTO";
+    frame_4244_4453.name = "Social Icons";
+    frame_4244_4453.relativeTransform = [
+      [1, 0, 155.5],
+      [0, 1, 630],
+    ];
+    frame_4244_4453.x = 155.5;
+    frame_4244_4453.y = 630;
+    frame_4244_4453.fills = [];
+    frame_4244_4453.strokeTopWeight = 1;
+    frame_4244_4453.strokeBottomWeight = 1;
+    frame_4244_4453.strokeLeftWeight = 1;
+    frame_4244_4453.strokeRightWeight = 1;
+    frame_4244_4453.clipsContent = false;
+    frame_4244_4453.layoutMode = "HORIZONTAL";
+    frame_4244_4453.counterAxisSizingMode = "AUTO";
+    frame_4244_4453.itemSpacing = 14;
+
+    // Create FRAME
+    var frame_4244_4510 = figma.createFrame();
+    frame_4244_4378.appendChild(frame_4244_4510);
+    frame_4244_4510.resize(426.0, 91.0);
+    frame_4244_4510.primaryAxisSizingMode = "AUTO";
+    frame_4244_4510.name = "Content";
+    frame_4244_4510.relativeTransform = [
+      [1, 0, 443],
+      [0, 1, 684],
+    ];
+    frame_4244_4510.x = 443;
+    frame_4244_4510.y = 684;
+    frame_4244_4510.fills = [];
+    frame_4244_4510.counterAxisAlignItems = "CENTER";
+    frame_4244_4510.strokeTopWeight = 1;
+    frame_4244_4510.strokeBottomWeight = 1;
+    frame_4244_4510.strokeLeftWeight = 1;
+    frame_4244_4510.strokeRightWeight = 1;
+    frame_4244_4510.clipsContent = false;
+    frame_4244_4510.layoutMode = "VERTICAL";
+    frame_4244_4510.itemSpacing = 24;
+
+    // Create FRAME
+    var frame_4244_4511 = figma.createFrame();
+    frame_4244_4510.appendChild(frame_4244_4511);
+    frame_4244_4511.resize(768.0, 91.0);
+    frame_4244_4511.primaryAxisSizingMode = "AUTO";
+    frame_4244_4511.name = "Content";
+    frame_4244_4511.relativeTransform = [
+      [1, 0, -171],
+      [0, 1, 0],
+    ];
+    frame_4244_4511.x = -171;
+    frame_4244_4511.fills = [];
+    frame_4244_4511.counterAxisAlignItems = "CENTER";
+    frame_4244_4511.strokeTopWeight = 1;
+    frame_4244_4511.strokeBottomWeight = 1;
+    frame_4244_4511.strokeLeftWeight = 1;
+    frame_4244_4511.strokeRightWeight = 1;
+    frame_4244_4511.clipsContent = false;
+    frame_4244_4511.itemSpacing = 16;
 
     // Create TEXT
-    var text_4235_2020 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2020);
-    text_4235_2020.resize(101.0, 24.0);
-    text_4235_2020.name = "or $199 yearly";
-    text_4235_2020.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
+    var text_4244_4512 = figma.createText();
+    frame_4244_4511.appendChild(text_4244_4512);
+    text_4244_4512.fillStyleId = black_4902.id;
+    text_4244_4512.resize(180.0, 48.0);
+    text_4244_4512.name = "Heading";
+    text_4244_4512.relativeTransform = [
+      [1, 0, 294],
+      [0, 1, 0],
     ];
-    text_4235_2020.relativeTransform = [
-      [1, 0, 1051],
-      [0, 1, 161],
-    ];
-    text_4235_2020.x = 1051;
-    text_4235_2020.y = 161;
+    text_4244_4512.x = 294;
+    text_4244_4512.layoutAlign = "STRETCH";
+    text_4244_4512.autoRename = false;
 
     // Font properties
-    text_4235_2020.fontName = {
+    text_4244_4512.fontName = {
+      family: "Roboto",
+      style: "Bold",
+    };
+    text_4244_4512.characters = "We’re hiring!";
+    text_4244_4512.fontSize = 32;
+    text_4244_4512.listSpacing = 0;
+    text_4244_4512.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4512.fontName = { family: "Roboto", style: "Bold" };
+    text_4244_4512.textAutoResize = "HEIGHT";
+
+    // Create TEXT
+    var text_4244_4513 = figma.createText();
+    frame_4244_4511.appendChild(text_4244_4513);
+    text_4244_4513.fillStyleId = black_4902.id;
+    text_4244_4513.resize(419.0, 26.0);
+    text_4244_4513.relativeTransform = [
+      [1, 0, 174],
+      [0, 1, 65],
+    ];
+    text_4244_4513.x = 174;
+    text_4244_4513.y = 65;
+    text_4244_4513.layoutAlign = "STRETCH";
+    text_4244_4513.autoRename = false;
+
+    // Font properties
+    text_4244_4513.fontName = {
       family: "Roboto",
       style: "Regular",
     };
-    text_4235_2020.characters = "or $199 yearly";
-    text_4235_2020.fontSize = 16;
-    text_4235_2020.listSpacing = 0;
-    text_4235_2020.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2020.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_4513.characters =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ";
+    text_4244_4513.fontSize = 17;
+    text_4244_4513.listSpacing = 0;
+    text_4244_4513.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_4513.textAutoResize = "HEIGHT";
 
-    // Create TEXT
-    var text_4235_2021 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2021);
-    text_4235_2021.resize(159.0, 24.0);
-    text_4235_2021.name = "Feature text goes here";
-    text_4235_2021.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2021.relativeTransform = [
-      [1, 0, 46],
-      [0, 1, 225],
-    ];
-    text_4235_2021.x = 46;
-    text_4235_2021.y = 225;
-
-    // Font properties
-    text_4235_2021.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2021.characters = "Feature text goes here";
-    text_4235_2021.fontSize = 16;
-    text_4235_2021.listSpacing = 0;
-    text_4235_2021.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2021.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2024 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2024);
-    text_4235_2024.resize(159.0, 24.0);
-    text_4235_2024.name = "Feature text goes here";
-    text_4235_2024.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2024.relativeTransform = [
-      [1, 0, 492],
-      [0, 1, 225],
-    ];
-    text_4235_2024.x = 492;
-    text_4235_2024.y = 225;
-
-    // Font properties
-    text_4235_2024.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2024.characters = "Feature text goes here";
-    text_4235_2024.fontSize = 16;
-    text_4235_2024.listSpacing = 0;
-    text_4235_2024.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2024.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2027 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2027);
-    text_4235_2027.resize(159.0, 24.0);
-    text_4235_2027.name = "Feature text goes here";
-    text_4235_2027.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2027.relativeTransform = [
-      [1, 0, 944],
-      [0, 1, 225],
-    ];
-    text_4235_2027.x = 944;
-    text_4235_2027.y = 225;
-
-    // Font properties
-    text_4235_2027.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2027.characters = "Feature text goes here";
-    text_4235_2027.fontSize = 16;
-    text_4235_2027.listSpacing = 0;
-    text_4235_2027.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2027.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2022 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2022);
-    text_4235_2022.resize(159.0, 24.0);
-    text_4235_2022.name = "Feature text goes here";
-    text_4235_2022.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2022.relativeTransform = [
-      [1, 0, 46],
-      [0, 1, 268],
-    ];
-    text_4235_2022.x = 46;
-    text_4235_2022.y = 268;
-
-    // Font properties
-    text_4235_2022.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2022.characters = "Feature text goes here";
-    text_4235_2022.fontSize = 16;
-    text_4235_2022.listSpacing = 0;
-    text_4235_2022.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2022.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2025 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2025);
-    text_4235_2025.resize(159.0, 24.0);
-    text_4235_2025.name = "Feature text goes here";
-    text_4235_2025.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2025.relativeTransform = [
-      [1, 0, 492],
-      [0, 1, 268],
-    ];
-    text_4235_2025.x = 492;
-    text_4235_2025.y = 268;
-
-    // Font properties
-    text_4235_2025.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2025.characters = "Feature text goes here";
-    text_4235_2025.fontSize = 16;
-    text_4235_2025.listSpacing = 0;
-    text_4235_2025.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2025.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2028 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2028);
-    text_4235_2028.resize(159.0, 24.0);
-    text_4235_2028.name = "Feature text goes here";
-    text_4235_2028.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2028.relativeTransform = [
-      [1, 0, 944],
-      [0, 1, 268],
-    ];
-    text_4235_2028.x = 944;
-    text_4235_2028.y = 268;
-
-    // Font properties
-    text_4235_2028.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2028.characters = "Feature text goes here";
-    text_4235_2028.fontSize = 16;
-    text_4235_2028.listSpacing = 0;
-    text_4235_2028.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2028.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2026 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2026);
-    text_4235_2026.resize(159.0, 24.0);
-    text_4235_2026.name = "Feature text goes here";
-    text_4235_2026.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2026.relativeTransform = [
-      [1, 0, 492],
-      [0, 1, 310],
-    ];
-    text_4235_2026.x = 492;
-    text_4235_2026.y = 310;
-
-    // Font properties
-    text_4235_2026.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2026.characters = "Feature text goes here";
-    text_4235_2026.fontSize = 16;
-    text_4235_2026.listSpacing = 0;
-    text_4235_2026.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2026.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2029 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2029);
-    text_4235_2029.resize(159.0, 24.0);
-    text_4235_2029.name = "Feature text goes here";
-    text_4235_2029.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2029.relativeTransform = [
-      [1, 0, 944],
-      [0, 1, 310],
-    ];
-    text_4235_2029.x = 944;
-    text_4235_2029.y = 310;
-
-    // Font properties
-    text_4235_2029.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2029.characters = "Feature text goes here";
-    text_4235_2029.fontSize = 16;
-    text_4235_2029.listSpacing = 0;
-    text_4235_2029.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2029.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2031 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2031);
-    text_4235_2031.resize(159.0, 24.0);
-    text_4235_2031.name = "Feature text goes here";
-    text_4235_2031.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    text_4235_2031.relativeTransform = [
-      [1, 0, 944],
-      [0, 1, 353],
-    ];
-    text_4235_2031.x = 944;
-    text_4235_2031.y = 353;
-
-    // Font properties
-    text_4235_2031.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2031.characters = "Feature text goes here";
-    text_4235_2031.fontSize = 16;
-    text_4235_2031.listSpacing = 0;
-    text_4235_2031.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2031.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create VECTOR
-    var vector_4235_2033 = figma.createVector();
-    frame_4232_1294.appendChild(vector_4235_2033);
-    vector_4235_2033.resize(328.0, 48.0);
-    vector_4235_2033.name = "Rectangle 4";
-    vector_4235_2033.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    vector_4235_2033.strokes = [];
-    vector_4235_2033.strokeAlign = "INSIDE";
-    vector_4235_2033.relativeTransform = [
-      [1, 0, 41],
-      [0, 1, 435],
-    ];
-    vector_4235_2033.x = 41;
-    vector_4235_2033.y = 435;
-    vector_4235_2033.vectorNetwork = {
-      regions: [
-        {
-          windingRule: "NONZERO",
-          loops: [[0, 1, 2, 3]],
-          fills: [
-            {
-              type: "SOLID",
-              visible: true,
-              opacity: 1,
-              blendMode: "NORMAL",
-              color: { r: 0, g: 0, b: 0 },
-              boundVariables: {},
-            },
-          ],
-          fillStyleId: "",
-        },
-      ],
-      segments: [
-        {
-          start: 0,
-          end: 1,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 1,
-          end: 2,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 2,
-          end: 3,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 3,
-          end: 0,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-      ],
-      vertices: [
-        {
-          x: 0,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 0,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-      ],
-    };
-    vector_4235_2033.vectorPaths = [
-      { windingRule: "NONZERO", data: "M 0 0 L 328 0 L 328 48 L 0 48 L 0 0 Z" },
-    ];
-
-    // Create VECTOR
-    var vector_4235_2035 = figma.createVector();
-    frame_4232_1294.appendChild(vector_4235_2035);
-    vector_4235_2035.resize(328.0, 48.0);
-    vector_4235_2035.name = "Rectangle 5";
-    vector_4235_2035.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    vector_4235_2035.strokes = [];
-    vector_4235_2035.strokeAlign = "INSIDE";
-    vector_4235_2035.relativeTransform = [
-      [1, 0, 492],
-      [0, 1, 435],
-    ];
-    vector_4235_2035.x = 492;
-    vector_4235_2035.y = 435;
-    vector_4235_2035.vectorNetwork = {
-      regions: [
-        {
-          windingRule: "NONZERO",
-          loops: [[0, 1, 2, 3]],
-          fills: [
-            {
-              type: "SOLID",
-              visible: true,
-              opacity: 1,
-              blendMode: "NORMAL",
-              color: { r: 0, g: 0, b: 0 },
-              boundVariables: {},
-            },
-          ],
-          fillStyleId: "",
-        },
-      ],
-      segments: [
-        {
-          start: 0,
-          end: 1,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 1,
-          end: 2,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 2,
-          end: 3,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 3,
-          end: 0,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-      ],
-      vertices: [
-        {
-          x: 0,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 0,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-      ],
-    };
-    vector_4235_2035.vectorPaths = [
-      { windingRule: "NONZERO", data: "M 0 0 L 328 0 L 328 48 L 0 48 L 0 0 Z" },
-    ];
-
-    // Create VECTOR
-    var vector_4235_2036 = figma.createVector();
-    frame_4232_1294.appendChild(vector_4235_2036);
-    vector_4235_2036.resize(328.0, 48.0);
-    vector_4235_2036.name = "Rectangle 6";
-    vector_4235_2036.fills = [
-      {
-        type: "SOLID",
-        visible: true,
-        opacity: 1,
-        blendMode: "NORMAL",
-        color: { r: 0, g: 0, b: 0 },
-        boundVariables: {},
-      },
-    ];
-    vector_4235_2036.strokes = [];
-    vector_4235_2036.strokeAlign = "INSIDE";
-    vector_4235_2036.relativeTransform = [
-      [1, 0, 938],
-      [0, 1, 435],
-    ];
-    vector_4235_2036.x = 938;
-    vector_4235_2036.y = 435;
-    vector_4235_2036.vectorNetwork = {
-      regions: [
-        {
-          windingRule: "NONZERO",
-          loops: [[0, 1, 2, 3]],
-          fills: [
-            {
-              type: "SOLID",
-              visible: true,
-              opacity: 1,
-              blendMode: "NORMAL",
-              color: { r: 0, g: 0, b: 0 },
-              boundVariables: {},
-            },
-          ],
-          fillStyleId: "",
-        },
-      ],
-      segments: [
-        {
-          start: 0,
-          end: 1,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 1,
-          end: 2,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 2,
-          end: 3,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-        {
-          start: 3,
-          end: 0,
-          tangentStart: { x: 0, y: 0 },
-          tangentEnd: { x: 0, y: 0 },
-        },
-      ],
-      vertices: [
-        {
-          x: 0,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 0,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 328,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-        {
-          x: 0,
-          y: 48,
-          strokeCap: "NONE",
-          strokeJoin: "MITER",
-          cornerRadius: 0,
-          handleMirroring: "NONE",
-        },
-      ],
-    };
-    vector_4235_2036.vectorPaths = [
-      { windingRule: "NONZERO", data: "M 0 0 L 328 0 L 328 48 L 0 48 L 0 0 Z" },
-    ];
-
-    // Create TEXT
-    var text_4235_2037 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2037);
-    text_4235_2037.resize(80.0, 24.0);
-    text_4235_2037.name = "Get started";
-    text_4235_2037.fills = [
+    // Create RECTANGLE
+    var rectangle_4244_5404 = figma.createRectangle();
+    frame_4244_3749.appendChild(rectangle_4244_5404);
+    rectangle_4244_5404.resize(155.0, 44.0);
+    rectangle_4244_5404.name = "Rectangle 2";
+    rectangle_4244_5404.fills = [
       {
         type: "SOLID",
         visible: true,
@@ -1538,91 +1761,60 @@ figma.ui.onmessage = async (msg) => {
         boundVariables: {},
       },
     ];
-    text_4235_2037.relativeTransform = [
-      [1, 0, 165],
-      [0, 1, 447],
-    ];
-    text_4235_2037.x = 165;
-    text_4235_2037.y = 447;
-
-    // Font properties
-    text_4235_2037.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2037.characters = "Get started";
-    text_4235_2037.fontSize = 16;
-    text_4235_2037.listSpacing = 0;
-    text_4235_2037.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2037.textAutoResize = "WIDTH_AND_HEIGHT";
-
-    // Create TEXT
-    var text_4235_2038 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2038);
-    text_4235_2038.resize(80.0, 24.0);
-    text_4235_2038.name = "Get started";
-    text_4235_2038.fills = [
+    rectangle_4244_5404.strokes = [
       {
         type: "SOLID",
         visible: true,
         opacity: 1,
         blendMode: "NORMAL",
-        color: { r: 1, g: 1, b: 1 },
+        color: { r: 0, g: 0, b: 0 },
         boundVariables: {},
       },
     ];
-    text_4235_2038.relativeTransform = [
-      [1, 0, 616],
-      [0, 1, 447],
+    rectangle_4244_5404.relativeTransform = [
+      [1, 0, 642],
+      [0, 1, 1790],
     ];
-    text_4235_2038.x = 616;
-    text_4235_2038.y = 447;
-
-    // Font properties
-    text_4235_2038.fontName = {
-      family: "Roboto",
-      style: "Regular",
-    };
-    text_4235_2038.characters = "Get started";
-    text_4235_2038.fontSize = 16;
-    text_4235_2038.listSpacing = 0;
-    text_4235_2038.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2038.textAutoResize = "WIDTH_AND_HEIGHT";
+    rectangle_4244_5404.x = 642;
+    rectangle_4244_5404.y = 1790;
+    rectangle_4244_5404.strokeTopWeight = 1;
+    rectangle_4244_5404.strokeBottomWeight = 1;
+    rectangle_4244_5404.strokeLeftWeight = 1;
+    rectangle_4244_5404.strokeRightWeight = 1;
 
     // Create TEXT
-    var text_4235_2039 = figma.createText();
-    frame_4232_1294.appendChild(text_4235_2039);
-    text_4235_2039.resize(80.0, 24.0);
-    text_4235_2039.name = "Get started";
-    text_4235_2039.fills = [
+    var text_4244_5405 = figma.createText();
+    frame_4244_3749.appendChild(text_4244_5405);
+    text_4244_5405.resize(114.0, 26.0);
+    text_4244_5405.name = "Open positions";
+    text_4244_5405.fills = [
       {
         type: "SOLID",
         visible: true,
         opacity: 1,
         blendMode: "NORMAL",
-        color: { r: 1, g: 1, b: 1 },
+        color: { r: 0, g: 0, b: 0 },
         boundVariables: {},
       },
     ];
-    text_4235_2039.relativeTransform = [
-      [1, 0, 1062],
-      [0, 1, 447],
+    text_4244_5405.relativeTransform = [
+      [1, 0, 663],
+      [0, 1, 1799],
     ];
-    text_4235_2039.x = 1062;
-    text_4235_2039.y = 447;
+    text_4244_5405.x = 663;
+    text_4244_5405.y = 1799;
 
     // Font properties
-    text_4235_2039.fontName = {
+    text_4244_5405.fontName = {
       family: "Roboto",
       style: "Regular",
     };
-    text_4235_2039.characters = "Get started";
-    text_4235_2039.fontSize = 16;
-    text_4235_2039.listSpacing = 0;
-    text_4235_2039.lineHeight = { unit: "PERCENT", value: 150 };
-    text_4235_2039.textAutoResize = "WIDTH_AND_HEIGHT";
+    text_4244_5405.characters = "Open positions";
+    text_4244_5405.fontSize = 17;
+    text_4244_5405.listSpacing = 0;
+    text_4244_5405.lineHeight = { unit: "PERCENT", value: 150 };
+    text_4244_5405.textAutoResize = "WIDTH_AND_HEIGHT";
   }
-
   // STOP HERE AND DELETE MAIN() ###############################################################
   figma.closePlugin();
 };
