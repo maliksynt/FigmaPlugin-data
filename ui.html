@@ -1,7 +1,6 @@
 <h2>Rectangle Creator</h2>
 <p>Count: <input id="count" value="5" /></p>
 <button id="create" class="button">Create</button>
-<button id="cancel" class="button">Cancel</button>
 <script>
   document.getElementById("create").onclick = () => {
     const textbox = document.getElementById("count");
@@ -18,6 +17,7 @@
 </script>
 <style>
   button {
+    margin-left: 80px;
     padding: 5px;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -25,10 +25,6 @@
   }
   #create {
     background-color: #4caf50;
-    color: white;
-  }
-  #cancel {
-    background-color: #f44336;
     color: white;
   }
 </style>
